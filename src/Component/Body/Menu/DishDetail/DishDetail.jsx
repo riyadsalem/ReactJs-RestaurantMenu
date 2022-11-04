@@ -1,5 +1,6 @@
 import "./DishDetail.css";
 import { Card } from "react-bootstrap";
+import DishComment from "../DishComment/DishComment";
 
 const DishDetail = (props) => {
   return (
@@ -14,6 +15,8 @@ const DishDetail = (props) => {
             Label: {props.dish.label !== "" ? props.dish.label : "Not Found"}
           </p>
           <p style={{ fontWeight: "bold" }}>Category: {props.dish.category}</p>
+          <hr />
+          <DishComment comments={props.dish.comments} />
         </Card.Body>
       </Card>
     </>
