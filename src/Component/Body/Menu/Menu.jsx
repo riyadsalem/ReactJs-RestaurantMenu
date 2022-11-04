@@ -11,13 +11,18 @@ export default class Menu extends Component {
   };
 
   onDishSelect = (dish) => {
+    // console.log(dish);
     this.setState({ selectedDish: dish });
   };
 
   render() {
     const menu = this.state.dishes.map((item) => {
       return (
-        <MenuItem key={item.id} dish={item} DishSelect={this.onDishSelect} />
+        <MenuItem
+          key={item.id}
+          dish={item}
+          DishSelect={() => this.onDishSelect(item)}
+        />
       );
     });
 
