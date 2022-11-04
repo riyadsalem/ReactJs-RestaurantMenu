@@ -1,9 +1,10 @@
 import "./Header.css";
+import Navigation from "./Navigation/Navigation";
 
 const Header = () => {
   return (
     <div>
-      <h1>This is Header</h1>
+      <Navigation />
     </div>
   );
 };
