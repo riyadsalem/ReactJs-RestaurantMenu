@@ -1,9 +1,10 @@
 import "./Body.css";
+import Menu from "./Menu/Menu";
 
 const Body = () => {
   return (
     <div>
-      <h1>This is Body</h1>
+      <Menu />
     </div>
   );
 };
