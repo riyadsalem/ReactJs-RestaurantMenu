@@ -15,7 +15,7 @@ export default class Menu extends Component {
         <div className="container">
           <div className="row">
             <div className="col-6">{menu}</div>
-            <div className="col-6"></div>
+            <div className="col-6">Col 6</div>
           </div>
         </div>
       </>
