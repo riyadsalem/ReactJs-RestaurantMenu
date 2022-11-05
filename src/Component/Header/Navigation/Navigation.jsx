@@ -1,17 +1,44 @@
 import "./Navigation.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
+          <Navbar.Brand>
+            <Link to="/" className="mainmenu">
+              <div className="logo">
+                <h1>RESTAURANT REACTJS</h1>
+              </div>
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link>
+                <Link to="/" className="mainmenu">
+                  Home
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/menu" className="mainmenu">
+                  Menu
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/about" className="mainmenu">
+                  About
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/contact" className="mainmenu">
+                  Contact
+                </Link>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

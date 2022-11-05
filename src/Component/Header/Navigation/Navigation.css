@@ -1,0 +1,18 @@
+.mainmenu {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+.mainmenu:hover {
+  color: brown;
+}
+
+.logo {
+  border: 1px solid brown;
+  border-radius: 10px;
+  padding: 0px 5px;
+}
+
+.logo:hover {
+  padding: 5px;
+}
