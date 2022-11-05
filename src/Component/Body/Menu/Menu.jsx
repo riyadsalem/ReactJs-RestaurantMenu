@@ -20,6 +20,7 @@ export default class Menu extends Component {
   };
 
   render() {
+    document.title = "Menu page";
     const menu = this.state.dishes.map((item) => {
       return (
         <MenuItem

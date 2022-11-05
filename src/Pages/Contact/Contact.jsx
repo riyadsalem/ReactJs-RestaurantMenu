@@ -37,6 +37,7 @@ export default class Contact extends Component {
   };
 
   render() {
+    document.title = " Contact Page";
     return (
       <>
         <Fragment>

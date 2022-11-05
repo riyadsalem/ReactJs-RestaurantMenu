@@ -4,6 +4,7 @@ import "./About.css";
 
 export default class About extends Component {
   render() {
+    document.title = "About Page";
     return (
       <>
         <Fragment>
