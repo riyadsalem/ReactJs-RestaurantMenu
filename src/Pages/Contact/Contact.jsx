@@ -32,7 +32,7 @@ export default class Contact extends Component {
     this.setState({ [name]: value });
   };
   handleSubmit = (event) => {
-    console.log(this.state);
+    // console.log(this.state);
     event.preventDefault();
   };
 
