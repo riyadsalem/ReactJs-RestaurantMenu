@@ -8,7 +8,7 @@ const MenuItem = (props) => {
       <Fragment>
         <Container>
           <Col>
-            <Card style={{ width: "25rem" }}>
+            <Card style={{ width: "25rem", marginTop: "10px" }}>
               <Card.Img variant="top" src={props.dish.image} />
               <Card.Body>
                 <Card.Title
@@ -20,7 +20,7 @@ const MenuItem = (props) => {
                 <Card.Text>{props.dish.description}</Card.Text>
                 <p style={{ fontWeight: "bold" }}>Price: {props.dish.price}</p>
                 <p style={{ fontWeight: "bold" }}>
-                  Label:{" "}
+                  Label:
                   {props.dish.label !== "" ? props.dish.label : "Not Found"}
                 </p>
               </Card.Body>

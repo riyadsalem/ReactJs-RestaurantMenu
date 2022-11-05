@@ -16,7 +16,7 @@ const DishDetail = (props) => {
           </p>
           <p style={{ fontWeight: "bold" }}>Category: {props.dish.category}</p>
           <hr />
-          <DishComment comments={props.dish.comments} />
+          <DishComment comments={props.comments} />
         </Card.Body>
       </Card>
     </>
