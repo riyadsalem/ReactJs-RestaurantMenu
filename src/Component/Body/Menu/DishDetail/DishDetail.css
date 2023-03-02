@@ -1,0 +1,5 @@
+.modal-content {
+  height: 90vh;
+  overflow-y: auto;
+  width: 101% !important;
+}

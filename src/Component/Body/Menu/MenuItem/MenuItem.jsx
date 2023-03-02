@@ -8,8 +8,14 @@ const MenuItem = (props) => {
       <Fragment>
         <Container>
           <Col>
-            <Card style={{ width: "25rem", marginTop: "10px" }}>
-              <Card.Img variant="top" src={props.dish.image} />
+            <Card
+              style={{ width: "25rem", marginTop: "10px", height: "37rem" }}
+            >
+              <Card.Img
+                variant="top"
+                src={props.dish.image}
+                className="menu_img"
+              />
               <Card.Body>
                 <Card.Title
                   style={{ cursor: "pointer" }}

@@ -6,9 +6,9 @@ export default class Home extends Component {
     document.title = "Restaurant Project";
 
     return (
-      <>
-        <h1>This is Home Page</h1>
-      </>
+      <div style={{ textAlign: "center" }}>
+        <h1> Home Page</h1>
+      </div>
     );
   }
 }

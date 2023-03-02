@@ -45,7 +45,7 @@ export default class Menu extends Component {
     }
 
     return (
-      <>
+      <div className="menu_home">
         <Container fluit={true}>
           <Row lg={3} md={3} sm={6} xs={6}>
             {menu}
@@ -60,7 +60,7 @@ export default class Menu extends Component {
             </Modal.Footer>
           </Modal>
         </Container>
-      </>
+      </div>
     );
   }
 }
