@@ -1,2 +1,2 @@
-## RESTAURANT PROJECT
+## Restaurant Menu
 ### `CSS & HTML & ReactJs`
